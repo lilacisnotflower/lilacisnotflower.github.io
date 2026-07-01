@@ -3,5 +3,5 @@ layout: default
 title: Trip
 ---
 # 여행 기록
-- [1](/Trip/1)
-- [2](/Trip/2)
+- [1](/ex/trip/1)
+- [2](/ex/trip/2)
