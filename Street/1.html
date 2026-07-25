@@ -2,11 +2,75 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1번 | Street</title>
+    <style>
+        body { 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+            margin: 0; 
+            font-family: sans-serif; 
+            text-align: center;
+        }
+
+        .content { flex: 1; padding: 20px; }
+
+        nav { margin: 20px 0; }
+        nav a { margin: 0 10px; text-decoration: none; color: black; }
+
+        /* 사진 갤러리 그리드 스타일 */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer { padding: 40px 0; }
+        .back-link { 
+            text-decoration: none; 
+            color: #555; 
+            border: 1px solid #ccc; 
+            padding: 8px 16px; 
+            border-radius: 20px; 
+            transition: 0.3s;
+        }
+        .back-link:hover { background-color: #f0f0f0; }
+    </style>
 </head>
 <body>
-    <h1>1번</h1>
-    <p>여기에 여행에 관한 내용을 작성하세요.</p>
-    <a href="./">Street 목록으로 돌아가기</a>
+    <div class="content">
+        <h1>1번</h1>
+        
+        <!-- 사진 12장 갤러리 영역 (최상위 assets 폴더 기준 경로) -->
+        <div class="photo-grid">
+            <img src="../assets/Brooks_1.jpg" alt="Brooks 1">
+            <img src="../assets/Brooks_2.jpg" alt="Brooks 2">
+            <img src="../assets/Brooks_3.jpg" alt="Brooks 3">
+            <img src="../assets/Brooks_4.jpg" alt="Brooks 4">
+            <img src="../assets/Brooks_5.jpg" alt="Brooks_5">
+            <img src="../assets/Brooks_6.jpg" alt="Brooks_6">
+            <img src="../assets/Brooks_7.jpg" alt="Brooks_7">
+            <img src="../assets/Brooks_8.jpg" alt="Brooks_8">
+            <img src="../assets/Brooks_9.jpg" alt="Brooks_9">
+            <img src="../assets/Brooks_10.jpg" alt="Brooks_10">
+            <img src="../assets/Brooks_11.jpg" alt="Brooks_11">
+            <img src="../assets/Brooks_12.jpg" alt="Brooks_12">
+        </div>
+    </div>
+
+    <footer>
+        <a href="./" class="back-link">← Street 목록으로</a>
+    </footer>
 </body>
 </html>
