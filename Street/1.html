@@ -19,12 +19,12 @@
         nav { margin: 20px 0; }
         nav a { margin: 0 10px; text-decoration: none; color: black; }
 
-        /* 사진 갤러리 그리드 스타일 */
+        /* 사진 1열 세로 정렬 스타일 */
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: 1fr; /* 무조건 1열로 설정 */
             gap: 15px;
-            max-width: 900px;
+            max-width: 600px; /* 1열이 너무 넓어지지 않도록 최대 너비 제한 */
             margin: 20px auto;
         }
 
@@ -52,20 +52,20 @@
     <div class="content">
         <h1>1번</h1>
         
-        <!-- 사진 12장 갤러리 영역 (최상위 assets 폴더 기준 경로) -->
+        <!-- 사진 12장 1열 세로 갤러리 영역 -->
         <div class="photo-grid">
             <img src="../assets/Brooks_1.jpg" alt="Brooks 1">
             <img src="../assets/Brooks_2.jpg" alt="Brooks 2">
             <img src="../assets/Brooks_3.jpg" alt="Brooks 3">
             <img src="../assets/Brooks_4.jpg" alt="Brooks 4">
-            <img src="../assets/Brooks_5.jpg" alt="Brooks_5">
-            <img src="../assets/Brooks_6.jpg" alt="Brooks_6">
-            <img src="../assets/Brooks_7.jpg" alt="Brooks_7">
-            <img src="../assets/Brooks_8.jpg" alt="Brooks_8">
-            <img src="../assets/Brooks_9.jpg" alt="Brooks_9">
-            <img src="../assets/Brooks_10.jpg" alt="Brooks_10">
-            <img src="../assets/Brooks_11.jpg" alt="Brooks_11">
-            <img src="../assets/Brooks_12.jpg" alt="Brooks_12">
+            <img src="../assets/Brooks_5.jpg" alt="Brooks 5">
+            <img src="../assets/Brooks_6.jpg" alt="Brooks 6">
+            <img src="../assets/Brooks_7.jpg" alt="Brooks 7">
+            <img src="../assets/Brooks_8.jpg" alt="Brooks 8">
+            <img src="../assets/Brooks_9.jpg" alt="Brooks 9">
+            <img src="../assets/Brooks_10.jpg" alt="Brooks 10">
+            <img src="../assets/Brooks_11.jpg" alt="Brooks 11">
+            <img src="../assets/Brooks_12.jpg" alt="Brooks 12">
         </div>
     </div>
 
